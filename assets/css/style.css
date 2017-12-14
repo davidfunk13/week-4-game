@@ -1,24 +1,44 @@
-.header, .rules, .imagecontainer, .bigcontainer {
+body {
+    background: #e3e0cc;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+}
+
+.header,
+.rules,
+.imagecontainer,
+.bigcontainer {
     border: 1px solid black;
 }
 
 .header {
+    background: #c5d5c5;
     width: 850px;
     height: 100px;
     text-align: center;
     margin-bottom: 3%;
 }
+
 .rules {
+    background: #9fa9a3;
     padding: 1%;
     width: 830px;
     margin-bottom: 3%;
 }
+
 .imagecontainer {
     width: 850px;
     height: 150px;
+    background: #c5d5c5;
 }
+
 .bigcontainer {
+    margin-top: 5%;
     margin-left: 15%;
     width: 850px;
     padding: 1%;
+    background: #f0f0f0;
 }
