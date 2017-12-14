@@ -1,5 +1,6 @@
 body {
     background: #e3e0cc;
+    
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
     margin-left: 15%;
     width: 850px;
     padding: 1%;
-    background: #f0f0f0;
+    background: url("../images/bg.png");
 }
 
 img {

@@ -6,11 +6,15 @@ var chosenNumber = document.getElementById("number")
 chosenNumber.innerHTML = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
 };
 //Red Crystal random Value
-redValue =  Math.floor((Math.random() * 12) + 1);
+randomRed =  Math.floor((Math.random() * 12) + 1);
 //blue crystal random value
-blueValue =  Math.floor((Math.random() * 12) + 1);
+randomBlue =  Math.floor((Math.random() * 12) + 1);
 //green crystal random value
-greenValue =  Math.floor((Math.random() * 12) + 1);
+randomGreen =  Math.floor((Math.random() * 12) + 1);
 //purple crystal random value
-purpleValue =  Math.floor((Math.random() * 12) + 1);
-console.log(redValue, blueValue, greenValue, purpleValue);
+randomPurple =  Math.floor((Math.random() * 12) + 1);
+//empty button values
+var crystalValues = [];
+//pushes random integer values to an array, to which we will reference the index of the random numbers and assign them to crystal buttons.
+crystalValues.push(randomRed, randomGreen, randomBlue, randomPurple);
+console.log(crystalValues);
