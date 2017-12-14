@@ -29,6 +29,12 @@ h1 {
     margin-bottom: 3%;
 }
 
+.numberdisplay,
+#number {
+    font-size: 30px;
+    text-align: center;
+}
+
 .imagecontainer {
     width: 850px;
     height: 150px;
@@ -41,4 +47,12 @@ h1 {
     width: 850px;
     padding: 1%;
     background: #f0f0f0;
+}
+
+.blue,
+.red,
+.green {
+    width: 150px;
+    height: 150px;
+    margin-left: 10%;
 }
