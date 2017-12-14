@@ -49,10 +49,8 @@ h1 {
     background: #f0f0f0;
 }
 
-.blue,
-.red,
-.green {
+img {
     width: 150px;
     height: 150px;
-    margin-left: 10%;
+    margin-left: 5%;
 }
