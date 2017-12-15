@@ -1,10 +1,7 @@
-window.onload = function() {
+$(document).ready(function() {
     
-//selects "number" html div.
-var chosenNumber = document.getElementById("number")
-// writes a random number between 19 and 120 to the div.
-chosenNumber.innerHTML = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
-};
+//selects "number" html div. Writes a random number between 19 and 120 to the div.
+var chosenNumber = $("#number").html(Math.floor((Math.random() * (120 - 19 + 1)) + 19));
 //Red Crystal random Value
 randomRed =  Math.floor((Math.random() * 12) + 1);
 //blue crystal random value
@@ -14,7 +11,10 @@ randomGreen =  Math.floor((Math.random() * 12) + 1);
 //purple crystal random value
 randomPurple =  Math.floor((Math.random() * 12) + 1);
 //empty button values
-var crystalValues = [];
-//pushes random integer values to an array, to which we will reference the index of the random numbers and assign them to crystal buttons.
-crystalValues.push(randomRed, randomGreen, randomBlue, randomPurple);
-console.log(crystalValues);
+var redValue = [randomRed];
+var blueValue = [randomBlue];
+var greenValue = [randomGreen];
+var purpleValue = [randomPurple];
+console.log(redValue, blueValue, greenValue, purpleValue);
+
+});
