@@ -1,6 +1,5 @@
 body {
     background: #e3e0cc;
-    
 }
 
 h1 {
@@ -31,7 +30,9 @@ h1 {
 }
 
 .numberdisplay,
-#number {
+#number,
+.scoredisplay,
+#score {
     font-size: 30px;
     text-align: center;
 }
