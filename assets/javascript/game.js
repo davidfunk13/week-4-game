@@ -29,17 +29,37 @@ $(document).ready(function () {
 
 
     //add values function
-
-    function addValues() {
-
-    }
-
     $('#red').on("click", function () {
-        redAdd = parseInt(redValue) + parseInt(totalScore);
-        console.log(redAdd);
-        $('#score').html(parseInt(redAdd));
+        $('red').val(redValue);
+        totalScore = totalScore + redValue;
+        console.log(redValue, totalScore);
+        $('#score').html(totalScore);
      });
-    $('#blue').on("click", function () { console.log(blueValue) });
-    $('#green').on("click", function () { console.log(greenValue) });
-    $('#purple').on("click", function () { console.log(purpleValue) });
-});
+     $('#blue').on("click", function () {
+        $('blue').val(blueValue);
+        totalScore = totalScore + blueValue;
+        console.log(blueValue, totalScore);
+        $('#score').html(totalScore);
+     });
+     $('#green').on("click", function () {
+        $('green').val(greenValue);
+        totalScore = totalScore + greenValue;
+        console.log(greenValue, totalScore);
+        $('#score').html(totalScore);
+     });
+     $('#purple').on("click", function () {
+        $('purple').val(purpleValue);
+        totalScore = totalScore + purpleValue;
+        console.log(purpleValue, totalScore);
+        $('#score').html(totalScore);
+     });});
+
+
+//psuedocode 
+
+//
+// game start, random number on page
+//total is zero
+//4 random numbers are generated between 1-12
+//on click, add that array to the total
+    // ie. redValue 
