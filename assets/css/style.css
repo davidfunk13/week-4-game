@@ -37,6 +37,14 @@ h1 {
     text-align: center;
 }
 
+.winsdisplay,
+#wins,
+.lossesdisplay,
+#losses {
+    font-size: 20px;
+    text-align: center;
+}
+
 .imagecontainer {
     width: 850px;
     height: 150px;
