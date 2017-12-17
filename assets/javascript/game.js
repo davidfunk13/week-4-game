@@ -23,11 +23,23 @@ $(document).ready(function () {
         console.log("chosen number: " + chosenNumber);
         if (totalScore === chosenNumber) {
             winsCounter++;
+            //come back and revise this
+            $('#wins').html(winsCounter);
             console.log("wins:" + winsCounter);
+            chosenNumber = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
+            $("#number").html(chosenNumber);
+            totalScore = 0;
+            $('#score').html(totalScore);
         };
         if (totalScore > chosenNumber) {
             lossesCounter++;
+            //same thing here, revisit.
+            $('#losses').html(lossesCounter);
+            chosenNumber = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
+            $("#number").html(chosenNumber);
             console.log("Losses: " + lossesCounter);
+            totalScore = 0;
+            $('#score').html(totalScore);
         };
     };
 
@@ -85,3 +97,10 @@ $(document).ready(function () {
 //4 random numbers are generated between 1-12
 //on click, add that array to the total
 // ie. redValue
+
+
+//remaining tasks...
+
+//1. do game reset on win or lose.
+//bonus.... duplicates? graphics?
+
