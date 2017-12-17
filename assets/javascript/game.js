@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
     //selects "number" html div. Writes a random number between 19 and 120 to the div.
-    var chosenNumber = $("#number").html(Math.floor((Math.random() * (120 - 19 + 1)) + 19));
+    var chosenNumber = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
+    $("#number").html(chosenNumber);
     //Total score
     var totalScore = 0;
     winsCounter = 0;
@@ -18,13 +19,15 @@ $(document).ready(function () {
 
 //winCheck conditions function. so far, no success. IN PROGRESS
     function winCheck () {
+        console.log("total score: " + totalScore);
+        console.log("chosen number: " + chosenNumber);
         if (totalScore === chosenNumber) {
             winsCounter++;
-            console.log(winsCounter);
+            console.log("wins:" + winsCounter);
         };
         if (totalScore > chosenNumber) {
             lossesCounter++;
-            console.log(lossesCounter);
+            console.log("Losses: " + lossesCounter);
         };
     };
 
