@@ -64,3 +64,9 @@ img {
     height: 150px;
     margin-left: 5%;
 }
+.instructionsheader, .instructions{
+    text-align: center;
+}
+.ruleslist {
+    padding-left: 30%;
+}

@@ -11,12 +11,21 @@
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <div class="bigcontainer">
         <div class="header">
             <h1>Dave's Crystals Game</h1>
         </div>
         <div class="rules">
+            <h1 class="instructionsheader">Instructions :</h1>
+            <h2 class="instructions">Click on the crystals to try and match the number!</h2>
+            <ol class="ruleslist">
+                <li>Gems are assigned a random value between one and twelve!</li>
+                <li>If you go over the random number value, you lose!</li>
+                <li>Number will regenerate</li>
+                <li>Crystal values will regenerate</li>
+                <li>If you match the number, you win!</li>
+            </ol>
             <div class="numberdisplay">
                 Your Number to match is:
             </div>
@@ -33,24 +42,12 @@
                 Losses:
                 <div id="losses"></div>
             </div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-            et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-            rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum
-            iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
-            te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-            tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </div>
         <div class="imagecontainer">
-        <img class="red" id="red" src="./assets/images/red.png" alt="red crystal">
-        <img class="blue" id="blue" src="./assets/images/blue.png" alt="blue crystal">
-        <img class="green" id="green" src="./assets/images/green.png" alt="green crystal">
-        <img class="purple" id="purple" src="./assets/images/purple.png" alt="purple crystal">
+            <img class="red" id="red" src="./assets/images/red.png" alt="red crystal">
+            <img class="blue" id="blue" src="./assets/images/blue.png" alt="blue crystal">
+            <img class="green" id="green" src="./assets/images/green.png" alt="green crystal">
+            <img class="purple" id="purple" src="./assets/images/purple.png" alt="purple crystal">
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
