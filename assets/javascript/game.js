@@ -20,21 +20,18 @@ $(document).ready(function () {
     };
 
     function winCheck () {
-        console.log("total score: " + totalScore);
-        console.log("chosen number: " + chosenNumber);
         if (totalScore === chosenNumber) {
             winsCounter++;
             $('#wins').html(winsCounter);
-            console.log("wins:" + winsCounter);
             resetGame();
         };
         if (totalScore > chosenNumber) {
             lossesCounter++;
             $('#losses').html(lossesCounter);
-            console.log("Losses: " + lossesCounter);
             resetGame();
         };
     };
+
     function resetGame() {
         chosenNumber = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
         $("#number").html(chosenNumber);
@@ -44,7 +41,6 @@ $(document).ready(function () {
         blueValue = getRandomNumber();
         greenValue = getRandomNumber();
         purpleValue = getRandomNumber();
-        console.log(redValue, blueValue, greenValue, purpleValue);
     }
 
     var randomNumber = getRandomNumber();
@@ -53,35 +49,30 @@ $(document).ready(function () {
     var greenValue = getRandomNumber();
     var purpleValue = getRandomNumber();
 
-    console.log(redValue, blueValue, greenValue, purpleValue);
 
     $("#score").html(totalScore);
 
-    $('#red').on("click", function () {
+    $('#red').click(function () {
         $('red').val(redValue);
         totalScore = totalScore + redValue;
-        console.log(redValue, totalScore);
         $('#score').html(totalScore);
         winCheck();
     });
-    $('#blue').on("click", function () {
+    $('#blue').click(function () {
         $('blue').val(blueValue);
         totalScore = totalScore + blueValue;
-        console.log(blueValue, totalScore);
         $('#score').html(totalScore);
         winCheck();
     });
-    $('#green').on("click", function () {
+    $('#green').click(function () {
         $('green').val(greenValue);
         totalScore = totalScore + greenValue;
-        console.log(greenValue, totalScore);
         $('#score').html(totalScore);
         winCheck();
     });
-    $('#purple').on("click", function () {
+    $('#purple').click(function () {
         $('purple').val(purpleValue);
         totalScore = totalScore + purpleValue;
-        console.log(purpleValue, totalScore);
         $('#score').html(totalScore);
         winCheck();
     });
